@@ -2,7 +2,7 @@
   "name": "wqmp-server",
   "redirects": [
     {
-      "source": "^(?!\/api)",
+      "source": "/*",
       "destination": "https://wqmp.github.io"
     }
   ]
