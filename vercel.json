@@ -1,0 +1,11 @@
+{
+  "name": "wqmp-server",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/legacy/:path*",
+      "destination": "/new/:path*"
+    }
+  ]
+}
