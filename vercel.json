@@ -1,9 +1,8 @@
 {
   "name": "wqmp-server",
-  "cleanUrls": true,
   "redirects": [
     {
-      "source": "^(?!\\/api)",
+      "source": "/*",
       "destination": "https://wqmp.github.io"
     }
   ]
