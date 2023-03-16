@@ -4,8 +4,8 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/legacy/:path*",
-      "destination": "/new/:path*"
+      "source": "^(?!\\/api)",
+      "destination": "https://wqmp.github.io"
     }
   ]
 }
