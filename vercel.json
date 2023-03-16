@@ -1,7 +1,6 @@
 {
   "name": "wqmp-server",
   "cleanUrls": true,
-  "trailingSlash": false,
   "redirects": [
     {
       "source": "^(?!\\/api)",
