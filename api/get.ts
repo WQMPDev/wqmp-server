@@ -1,4 +1,4 @@
-import { connect } from '@planetscale/database'
+const { connect } = require('@planetscale/database')
 export default async function handler(req, res) {
 
     const config = {
