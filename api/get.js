@@ -7,7 +7,7 @@ export default async function handler(request, response) {
 
     response.send(config.url ?? 'unknown')
 
-    //const conn = connect(config)
-    //const results = await conn.execute('select 1 from Records', [])
-    //return res.send(results);
+    const conn = connect(config)
+    const results = await conn.execute('select 1 from Records', [])
+    return res.send(results);
 }
