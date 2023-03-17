@@ -1,6 +1,8 @@
 {
   "name": "wqmp-server",
   "version": "1.0.0",
+  "description": "Backend for WQMP",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WQMPDev/wqmp-server.git"

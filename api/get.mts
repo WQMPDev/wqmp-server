@@ -6,6 +6,6 @@ export default async function handler(req, res) {
     }
 
     const conn = connect(config)
-    const results = await conn.execute('select 1 from Records', [1])
+    const results = await conn.execute('select 1 from Records', [])
     return res.send(results);
 }
