@@ -12,7 +12,8 @@ export default async function handler(request, response) {
         const ignoredProps = ['RecordId', 'DeviceId'];
 
         response.setHeader('Content-Type', 'text/csv');
-        
+        response.setHeader('Access-Control-Allow-Origin', '*');
+
         if(!result.rows?.length) {
             response.status(400);
             return response.send(result.headers.filter(h => !ignoredProps.includes(h)).map(h => h.toLowerCase()).join(','));
