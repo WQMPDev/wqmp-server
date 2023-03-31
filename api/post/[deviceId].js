@@ -7,7 +7,7 @@ export default async function handler(request, response) {
         const {deviceId = 'TEST'} = request.query;
         const body = request.body;
 
-        if(!/^[A-Z0-9_-]{,16}$/.test(deviceId) && deviceId !== 'TEST') {
+        if(!/^[A-Z0-9_-]{4,16}$/.test(deviceId) && deviceId !== 'TEST') {
             response.status(400);
             return response.send('400 Bad Id');
         }
