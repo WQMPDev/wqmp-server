@@ -9,11 +9,13 @@ export default async function handler(request, response) {
 
         if(!/^[A-Z0-9_-]{4,16}$/.test(deviceId) && deviceId !== 'TEST') {
             response.status(400);
+            console.log('Bad Id');
             return response.send('400 Bad Id');
         }
 
         if(!body) {
             response.status(400);
+            console.log('No Body')
             return response.send('400 No Body')
         }
 
@@ -26,6 +28,7 @@ export default async function handler(request, response) {
         for(const prop of Object.keys(props)) {
             if(!(prop in data)) {
                 response.status(400);
+                console.log('Bad Body')
                 return response.send('400 Invalid Body');
             }
         }
